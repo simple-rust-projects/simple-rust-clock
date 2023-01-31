@@ -23,7 +23,6 @@ fn main() {
             for c in time.chars() {
                 let col = match c {
                     '0'..='9' => c as usize - '0' as usize,
-                    ':' => 10,
                     _ => 10,
                 };
                 print!("{} ", row[col]);
